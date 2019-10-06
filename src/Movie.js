@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import {MovieContext} from './MovieContext';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,7 +6,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
     card: {
-      maxWidth: 345,
+      maxWidth: 500,
+      width: '150px',
+      margin: '0 20px'
     }
 }));
 

@@ -5,7 +5,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
 
-
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
@@ -17,6 +16,9 @@ const useStyles = makeStyles(theme => ({
       display: "flex",
       flexGrow: 1,
       justifyContent: "center"
+    },
+    para: {
+        margin: '0 20px'
     }
 }));
 
@@ -29,9 +31,9 @@ const Nav = () => {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        <h3>Movie List</h3>
+                        Movie List
                     </Typography>
-                    <p>list of Movie:  {movies.length}</p>
+                    <p className={classes.para}>list of Movie:  {movies.length}</p>
                 </Toolbar>
             </AppBar>
         </div>

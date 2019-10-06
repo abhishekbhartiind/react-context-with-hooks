@@ -20,8 +20,8 @@ const MovieList = () => {
     return (
         <div className={classes.movie} >
             {
-                movies.map(movie => (
-                    <Movie key={movie.id} name={movie.name} price={movie.price}/>
+                movies.map((movie, ix) => (
+                    <Movie key={ix} name={movie.name} price={movie.price}/>
                 ))
                 // movies.map(movie => {
                 //     return (

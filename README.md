@@ -10,13 +10,14 @@ Context API
 -----------------------------------------------------------------------
 
 => Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+=> Context is React out-of-the-box solution to solve the props drilling problem.
 
- => Context is React's out-of-the-box solution to solve the props drilling problem.
-
-{
-
-    As we know:  As with Redux, it allows us to create a kind of global state (component) which can be accessed anywhere from a component tree.
-
-}
+{ As we know:  As with Redux, it allows us to create a kind of global state (component) which can be accessed anywhere from a component tree. }
 
 All consumers that are descendants of a Provider will re-render whenever the Provider’s value prop changes.
+
+
+usage: Some examples of this kind of data:
+    - The current UI theme.
+    - The current UI language.
+    - User’s profile information (avatar, name, etc.).
