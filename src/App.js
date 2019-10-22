@@ -9,16 +9,13 @@ import './App.css';
 
 function App() {
   return (
-    <ThemeProvider>
-       <MovieProvider>
-        <div className="App">
-          <Nav/>
-          <Switch/>
-          <AddMovie/>
-          <MovieList/>
-        </div>
-      </MovieProvider>
-    </ThemeProvider>
+    <MovieProvider>
+      <div className="App">
+        <Nav/>
+        <AddMovie/>
+        <MovieList/>
+      </div>
+    </MovieProvider>
   );
 }
 
